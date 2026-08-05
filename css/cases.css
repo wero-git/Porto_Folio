@@ -1,553 +1,214 @@
-/* =====================================================
-   CLAIM CASE STUDY
-   Winston Engamba Portfolio
-===================================================== */
+/* =====================
+   Cases CSS – Claims Study
+   (includes only styles not in main.css/projects.css)
+===================== */
 
-
-/* -----------------------------------------------------
-   HERO
------------------------------------------------------ */
-
+/* ---- Hero Section ---- */
 .case-hero {
-    padding: 120px 0 110px;
+    padding: 80px 0;
 }
-
-.case-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-bottom: 70px;
-
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+.case-hero .project-tags span {
+    /* reuse project-tag style (border, font-size) */
 }
-
-.case-hero-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 80px;
-    align-items: end;
-}
-
 .case-hero h1 {
+    font-size: clamp(3.5rem, 6vw, 6rem);
+    line-height: 1.05;
     margin: 0;
-
-    font-size: clamp(4rem, 9vw, 8rem);
-    line-height: 0.88;
-    letter-spacing: -0.06em;
-    font-weight: 700;
 }
 
-.case-hero h1 em {
-    font-style: normal;
-    font-weight: 400;
-}
-
-.case-hero-intro {
-    max-width: 500px;
-}
-
-.case-hero-intro p {
-    margin: 0 0 30px;
-
-    font-size: 1.15rem;
-    line-height: 1.7;
-}
-
-.case-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.case-tags span {
-    padding: 8px 12px;
-
-    border: 1px solid rgba(0,0,0,0.16);
-
-    font-size: 0.72rem;
-    letter-spacing: 0.04em;
-}
-
-
-
-/* -----------------------------------------------------
-   SECTIONS
------------------------------------------------------ */
-
-.case-section {
-    padding: 110px 0;
-}
-
-.case-section-alt {
-    background: #f6f6f3;
-}
-
-.case-section-dark {
-    background: #151515;
-    color: #fff;
-}
-
-.case-section-top {
-    display: grid;
-    grid-template-columns: 0.25fr 0.75fr;
-
-    margin-bottom: 70px;
-}
-
-.case-section-top > span {
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-}
-
-.case-section-top h2 {
-    margin: 0;
-
-    max-width: 850px;
-
-    font-size: clamp(2.5rem, 5vw, 5rem);
-    line-height: 1;
-    letter-spacing: -0.045em;
-    font-weight: 600;
-}
-
-
-
-/* -----------------------------------------------------
-   CONTEXT
------------------------------------------------------ */
-
+/* ---- Two-column Context ---- */
 .case-two-column {
     display: grid;
-    grid-template-columns: 1fr 0.65fr;
-    gap: 120px;
+    grid-template-columns: 1fr 0.7fr;
+    gap: 80px;
 }
-
-.case-text {
-    max-width: 720px;
-}
-
 .case-text p {
-    margin: 0 0 25px;
-
-    font-size: 1.05rem;
-    line-height: 1.8;
+    margin-bottom: 1.8rem;
 }
-
 .case-facts {
-    border-top: 1px solid rgba(0,0,0,0.18);
+    border-top: 1px solid rgba(0,0,0,0.1);
 }
-
 .case-facts > div {
-    padding: 22px 0;
-
-    border-bottom: 1px solid rgba(0,0,0,0.18);
+    padding: 1.2rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-
 .case-facts span {
-    display: block;
-
-    margin-bottom: 7px;
-
-    font-size: 0.68rem;
-    letter-spacing: 0.1em;
+    font-size: 0.7rem;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
-.case-facts strong {
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-
-
-/* -----------------------------------------------------
-   CHALLENGE
------------------------------------------------------ */
-
+/* ---- Challenge List ---- */
 .challenge-list {
-    max-width: 1000px;
-    margin-left: 25%;
+    margin-left: 10%;
 }
-
 .challenge-row {
     display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 30px;
-
-    padding: 32px 0;
-
-    border-top: 1px solid rgba(0,0,0,0.18);
+    grid-template-columns: 3rem 1fr;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
 }
-
 .challenge-row:last-child {
-    border-bottom: 1px solid rgba(0,0,0,0.18);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-
-.challenge-row > span {
+.challenge-row span {
     font-size: 0.8rem;
     font-weight: 600;
 }
 
-.challenge-row h3 {
-    margin: 0 0 10px;
-
-    font-size: 1.45rem;
-    font-weight: 600;
-}
-
-.challenge-row p {
-    max-width: 650px;
-
-    margin: 0;
-
-    line-height: 1.7;
-}
-
-
-
-/* -----------------------------------------------------
-   APPROACH
------------------------------------------------------ */
-
+/* ---- Approach Steps ---- */
 .approach-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
-    border-top: 1px solid rgba(0,0,0,0.18);
+    border-top: 1px solid rgba(0,0,0,0.1);
 }
-
 .approach-grid article {
-    padding: 35px 35px 40px 0;
-
-    border-bottom: 1px solid rgba(0,0,0,0.18);
+    padding: 2rem 2rem 3rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-
 .approach-grid article:nth-child(odd) {
-    border-right: 1px solid rgba(0,0,0,0.18);
-    padding-right: 45px;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    padding-right: 3rem;
 }
-
-.approach-grid article:nth-child(even) {
-    padding-left: 45px;
-}
-
 .approach-grid article > span {
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 600;
+    text-transform: uppercase;
     letter-spacing: 0.08em;
 }
 
-.approach-grid h3 {
-    margin: 25px 0 12px;
-
-    font-size: 1.5rem;
-}
-
-.approach-grid p {
-    max-width: 520px;
-
-    margin: 0;
-
-    line-height: 1.7;
-}
-
-
-
-/* -----------------------------------------------------
-   PROCESS FLOW
------------------------------------------------------ */
-
+/* ---- Process Flow Diagram ---- */
 .claim-flow {
     display: flex;
-    align-items: stretch;
-
-    margin-top: 30px;
+    align-items: center;
+    margin: 2rem 0;
 }
-
 .flow-stage {
     flex: 1;
-
-    padding: 25px;
-
-    border: 1px solid rgba(255,255,255,0.3);
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
 }
-
 .flow-stage span {
     display: block;
-
-    margin-bottom: 50px;
-
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     opacity: 0.6;
+    margin-bottom: 0.5rem;
 }
-
 .flow-stage strong {
     display: block;
-
-    margin-bottom: 10px;
-
-    font-size: 1.25rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
-
 .flow-stage small {
     display: block;
-
-    max-width: 150px;
-
-    line-height: 1.6;
-    opacity: 0.65;
+    opacity: 0.7;
+    font-size: 0.9rem;
 }
-
 .flow-line {
-    width: 35px;
-
-    align-self: center;
-
+    width: 3rem;
     height: 1px;
-
-    background: rgba(255,255,255,0.35);
+    background: rgba(0,0,0,0.1);
+    margin: 0 0.5rem;
 }
 
-
-
-/* -----------------------------------------------------
-   TOOLS
------------------------------------------------------ */
-
+/* ---- Tools Grid ---- */
 .tools-list {
-    border-top: 1px solid rgba(0,0,0,0.18);
+    border-top: 1px solid rgba(0,0,0,0.1);
 }
-
 .tool-row {
     display: grid;
-    grid-template-columns: 180px 220px 1fr;
-    gap: 30px;
-
-    align-items: center;
-
-    padding: 28px 0;
-
-    border-bottom: 1px solid rgba(0,0,0,0.18);
+    grid-template-columns: 12rem 1fr;
+    gap: 1rem;
+    align-items: start;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-
 .tool-name {
     font-size: 1.2rem;
     font-weight: 600;
 }
-
 .tool-purpose {
-    font-size: 0.72rem;
+    font-size: 0.7rem;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    font-weight: 600;
 }
-
 .tool-row p {
     margin: 0;
-
     line-height: 1.6;
 }
 
-
-
-/* -----------------------------------------------------
-   OUTCOME
------------------------------------------------------ */
-
+/* ---- Outcomes ---- */
 .outcome-grid {
     display: grid;
     grid-template-columns: 1fr 0.8fr;
-
-    gap: 120px;
+    gap: 4rem;
 }
-
-.outcome-main {
-    max-width: 700px;
-}
-
 .outcome-main p {
-    margin: 0 0 25px;
-
+    margin: 0 0 1.5rem;
     font-size: 1.05rem;
-    line-height: 1.8;
+    line-height: 1.7;
 }
-
 .outcome-metrics {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 1rem;
 }
-
-.outcome-metrics > div {
-    padding-top: 20px;
-
-    border-top: 2px solid #A2FADA;
+.outcome-metrics div {
+    border-top: 3px solid #A2FADA;
+    padding-top: 1rem;
+    text-align: center;
 }
-
 .outcome-metrics strong {
     display: block;
-
-    margin-bottom: 12px;
-
-    font-size: 2.5rem;
-    letter-spacing: -0.05em;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.03em;
 }
-
 .outcome-metrics span {
-    display: block;
-
     font-size: 0.75rem;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
-
-
-/* -----------------------------------------------------
-   CLOSING
------------------------------------------------------ */
-
+/* ---- Closing Section ---- */
 .case-closing {
-    padding: 150px 0;
+    padding: 6rem 0;
 }
-
-.case-closing > .container {
-    max-width: 1100px;
-}
-
-.case-closing > .container > span {
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-}
-
 .case-closing h2 {
-    max-width: 1000px;
-
-    margin: 45px 0;
-
-    font-size: clamp(3rem, 6vw, 6rem);
-    line-height: 0.98;
-    letter-spacing: -0.055em;
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: 1.1;
+    margin: 2rem 0;
 }
-
 .case-closing p {
-    max-width: 650px;
-
-    margin-left: auto;
-
     font-size: 1.05rem;
-    line-height: 1.8;
+    line-height: 1.7;
+    max-width: 40rem;
+    margin-left: 0;
 }
 
-
-
-/* -----------------------------------------------------
-   BACK LINK
------------------------------------------------------ */
-
+/* ---- Back Link ---- */
 .case-back {
-    padding: 40px 0 100px;
+    padding: 2rem 0 4rem;
 }
-
 .case-back a {
-    font-size: 0.9rem;
     text-decoration: none;
+    font-size: 0.9rem;
 }
 
-
-
-/* -----------------------------------------------------
-   RESPONSIVE
------------------------------------------------------ */
-
+/* ---- Responsive ---- */
 @media (max-width: 900px) {
-
-    .case-hero-grid {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-
-    .case-section-top {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .case-two-column {
-        grid-template-columns: 1fr;
-        gap: 60px;
-    }
-
-    .challenge-list {
-        margin-left: 0;
-    }
-
-    .outcome-grid {
-        grid-template-columns: 1fr;
-        gap: 60px;
-    }
-
-}
-
-
-@media (max-width: 700px) {
-
-    .case-hero {
-        padding: 80px 0;
-    }
-
-    .case-section {
-        padding: 80px 0;
-    }
-
-    .case-meta {
-        margin-bottom: 50px;
-    }
-
-    .case-hero h1 {
-        font-size: 4rem;
-    }
-
-    .approach-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .approach-grid article:nth-child(odd) {
-        border-right: none;
-        padding-right: 0;
-    }
-
+    .case-two-column { grid-template-columns: 1fr; }
+    .approach-grid { grid-template-columns: 1fr; }
+    .approach-grid article:nth-child(odd),
     .approach-grid article:nth-child(even) {
-        padding-left: 0;
+        border-right: none;
+        padding: 2rem 0;
     }
-
-    .claim-flow {
-        display: block;
-    }
-
-    .flow-line {
-        width: 1px;
-        height: 35px;
-
-        margin-left: 25px;
-    }
-
-    .tool-row {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-    .outcome-metrics {
-        grid-template-columns: 1fr;
-    }
-
-    .case-closing {
-        padding: 100px 0;
-    }
-
+    .claim-flow { flex-direction: column; }
+    .flow-line { width: 1px; height: 2rem; margin: 0.5rem 0; }
+    .outcome-grid { grid-template-columns: 1fr; }
+    .case-closing { padding: 4rem 0; }
 }
